@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="v1E-4S-gbM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ba9-IN-pT3">
+            <objects>
+                <navigationController id="v1E-4S-gbM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R0t-A4-Ie0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kYE-He-tKG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4x-b5-i13" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1556" y="147"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="URLSessionMetrics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltW-vj-hjx">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heQ-kQ-6dc">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="heQ-kQ-6dc" firstAttribute="top" secondItem="ltW-vj-hjx" secondAttribute="top" constant="8" id="DrC-Dm-IZv"/>
+                                    <constraint firstAttribute="trailing" secondItem="heQ-kQ-6dc" secondAttribute="trailing" constant="8" id="ajK-kM-hBQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="heQ-kQ-6dc" secondAttribute="bottom" constant="8" id="q4R-jS-xba"/>
+                                    <constraint firstItem="heQ-kQ-6dc" firstAttribute="leading" secondItem="ltW-vj-hjx" secondAttribute="leading" constant="8" id="vNR-3C-5S2"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZh-QA-9ca">
+                                <state key="normal" title="Show Debug Controller"/>
+                                <connections>
+                                    <action selector="showDebugControllerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8x1-3v-r7B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FZh-QA-9ca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5CD-ut-ebG"/>
+                            <constraint firstItem="ltW-vj-hjx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qic-YX-RJD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FZh-QA-9ca" secondAttribute="bottom" constant="8" id="Ypr-46-ZKS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ltW-vj-hjx" secondAttribute="bottom" id="b3t-Kj-JFF"/>
+                            <constraint firstAttribute="trailing" secondItem="ltW-vj-hjx" secondAttribute="trailing" id="qHS-zB-pHn"/>
+                            <constraint firstItem="ltW-vj-hjx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vQW-Lj-Aog"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bne-2v-M6g"/>
+                    <connections>
+                        <outlet property="label" destination="heQ-kQ-6dc" id="0ml-9p-eHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-698.39999999999998" y="145.27736131934034"/>
+        </scene>
+    </scenes>
+</document>

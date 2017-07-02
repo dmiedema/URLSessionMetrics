@@ -9,34 +9,22 @@
 Pod::Spec.new do |s|
   s.name             = 'URLSessionMetrics'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of URLSessionMetrics.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'URLSessionMetrics Browser and Detail Viewer'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Logger and Viewer for URLSessionMetrics added back in iOS 10.
+  Designed to be easy to drop in and go with the easiest setup possible.
                        DESC
 
   s.homepage         = 'https://github.com/dmiedema/URLSessionMetrics'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dmiedema' => 'danielmiedema+github@me.com' }
   s.source           = { :git => 'https://github.com/dmiedema/URLSessionMetrics.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/no_good_ones'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'URLSessionMetrics/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'URLSessionMetrics' => ['URLSessionMetrics/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
 end

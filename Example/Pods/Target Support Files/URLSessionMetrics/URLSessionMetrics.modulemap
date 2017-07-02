@@ -1,0 +1,6 @@
+framework module URLSessionMetrics {
+  umbrella header "URLSessionMetrics-umbrella.h"
+
+  export *
+  module * { export * }
+}

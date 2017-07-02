@@ -1,0 +1,16 @@
+PODS:
+  - URLSessionMetrics (0.1.0)
+
+DEPENDENCIES:
+  - URLSessionMetrics (from `../`)
+
+EXTERNAL SOURCES:
+  URLSessionMetrics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  URLSessionMetrics: d43aeec071dca1a1c1c2045114d2ea713b599f6f
+
+PODFILE CHECKSUM: 7a21c1486552d4d78e797b0dc2a7337aa3a71803
+
+COCOAPODS: 1.2.1
