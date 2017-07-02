@@ -14,8 +14,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6B7587466B750339D79D6D0A /* Pods_URLSessionMetrics_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1209CA9AF43F19D88D35990 /* Pods_URLSessionMetrics_Example.framework */; };
 		8309065822D7A7D68B1FE234 /* Pods_URLSessionMetrics_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C14CE65A760EAC91D07BB7 /* Pods_URLSessionMetrics_Tests.framework */; };
-		C467EA1E1F08A0F5000DC74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C467EA1D1F08A0F5000DC74D /* Main.storyboard */; };
 		C467EA201F08A128000DC74D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C467EA1F1F08A0FD000DC74D /* RequestManager.swift */; };
+		C467EA2C1F08AF55000DC74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C467EA2B1F08AF3D000DC74D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,8 @@
 		A5C14CE65A760EAC91D07BB7 /* Pods_URLSessionMetrics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLSessionMetrics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A60A1315251F93DB0725E6 /* Pods-URLSessionMetrics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLSessionMetrics_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URLSessionMetrics_Tests/Pods-URLSessionMetrics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1209CA9AF43F19D88D35990 /* Pods_URLSessionMetrics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLSessionMetrics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C467EA1D1F08A0F5000DC74D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../../../URLSessionMetrics.bak/Example-iOS/URLSessionMetrics-Example/Main.storyboard"; sourceTree = "<group>"; };
 		C467EA1F1F08A0FD000DC74D /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		C467EA2B1F08AF3D000DC74D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EF7AD46D9D738093BEEC1323 /* Pods-URLSessionMetrics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLSessionMetrics_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-URLSessionMetrics_Tests/Pods-URLSessionMetrics_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +109,7 @@
 				C467EA1F1F08A0FD000DC74D /* RequestManager.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				C467EA1D1F08A0F5000DC74D /* Main.storyboard */,
+				C467EA2B1F08AF3D000DC74D /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -251,7 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C467EA1E1F08A0F5000DC74D /* Main.storyboard in Resources */,
+				C467EA2C1F08AF55000DC74D /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
