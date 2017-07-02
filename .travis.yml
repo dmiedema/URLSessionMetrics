@@ -12,5 +12,12 @@ before_install:
   - pod install --project-directory=Example
 
 script:
-  - set -o pipefail && xcodebuild test -workspace Example/URLSessionMetrics.xcworkspace -scheme URLSessionMetrics-Example -sdk iphonesimulator10.3 ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty
+  - set -o pipefail; xcodebuild 
+    -workspace Example/URLSessionMetrics.xcworkspace 
+    -scheme URLSessionMetrics-Example 
+    -sdk iphonesimulator10.3 
+    -destination 'platform=iOS Simulator,name=iPhone 6' 
+    ONLY_ACTIVE_ARCH=NO 
+    CODE_SIGNING_REQUIRED=NO 
+    test | xcpretty -c
   - pod lib lint
