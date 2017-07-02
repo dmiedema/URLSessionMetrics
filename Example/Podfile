@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'URLSessionMetrics_Example' do
+  pod 'URLSessionMetrics', :path => '../'
+
+  target 'URLSessionMetrics_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
