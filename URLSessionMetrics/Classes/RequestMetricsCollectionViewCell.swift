@@ -54,7 +54,7 @@ class RequestMetricsCollectionViewCell: UICollectionViewCell {
     lazy var durationLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.monospacedDigitSystemFont(ofSize: UIFont.labelFontSize, weight: UIFontWeightRegular)
+        label.font = UIFont.monospacedDigitSystemFont(ofSize: UIFont.labelFontSize, weight: UIFont.Weight.regular)
         return label
     }()
 
@@ -68,7 +68,7 @@ class RequestMetricsCollectionViewCell: UICollectionViewCell {
     lazy var responseTimeLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.monospacedDigitSystemFont(ofSize: UIFont.labelFontSize, weight: UIFontWeightRegular)
+        label.font = UIFont.monospacedDigitSystemFont(ofSize: UIFont.labelFontSize, weight: UIFont.Weight.regular)
         return label
     }()
 

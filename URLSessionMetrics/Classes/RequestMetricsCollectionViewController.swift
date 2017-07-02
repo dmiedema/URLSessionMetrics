@@ -58,11 +58,11 @@ public class RequestMetricsCollectionViewController: UICollectionViewController 
         refresh()
     }
     //MARK: - Actions
-    func closeViewController() {
+    @objc func closeViewController() {
         self.dismiss(animated: true, completion: nil)
     }
 
-    func refresh() {
+    @objc func refresh() {
         var organized: [String : [URLSessionTaskMetrics]] = [:]
 
         for metric in metricsManager.metrics {
